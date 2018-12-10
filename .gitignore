@@ -88,3 +88,5 @@ fabric.properties
 *.scss.map
 
 # End of https://www.gitignore.io/api/sass,intellij
+
+/node_modules/
