@@ -14,6 +14,28 @@
 </head>
 
 <body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link"><span>01</span>Natours</a></li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link"><span>02</span>Your benefits</a></li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link"><span>05</span>Book now</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <header class="header">
         <div class="header__logo-box">
             <img src="img/logo-white.png" alt="logo" class="header__logo">
@@ -23,7 +45,7 @@
                 <span class="heading-primary--main">Outdoors</span>
                 <span class="heading-primary--sub">is where life happens</span>
             </h1>
-            <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+            <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
         </div>
     </header>
     <main>
@@ -95,7 +117,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     Most popular tours
@@ -129,7 +151,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$297</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -161,7 +183,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$400</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -193,14 +215,14 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$500</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="u-center-text u-margin-top-huge">
-                <a href="#" class="btn btn--green">Discover all tours</a>
+                <a href="#popup" class="btn btn--green">Discover all tours</a>
             </div>
         </section>
         <section class="section-stories">
@@ -225,10 +247,7 @@
                     <div class="story__text">
                         <h3 class="heading-tertiary u-margin-bottom-small">I had the best week ever my family</h3>
                         <p>
-                            Moon at the solar system was the nuclear flux of powerdrain, teleported to a gravimetric hur'q.
-                            C-beams meet on starlight travel at deep space!
-                            I unite this flight, it's called crazy faith.
-                            Emitters meet with friendship at the biological solar sphere!
+                            Moon at the solar system was the nuclear flux of powerdrain, teleported to a gravimetric hur'q. C-beams meet on starlight travel at deep space! I unite this flight, it's called crazy faith. Emitters meet with friendship at the biological solar sphere!
                             The core is a distant particle.
                         </p>
                     </div>
@@ -243,10 +262,7 @@
                     <div class="story__text">
                         <h3 class="heading-tertiary u-margin-bottom-small">My life is completly different now</h3>
                         <p>
-                            Moon at the solar system was the nuclear flux of powerdrain, teleported to a gravimetric hur'q.
-                            C-beams meet on starlight travel at deep space!
-                            I unite this flight, it's called crazy faith.
-                            Emitters meet with friendship at the biological solar sphere!
+                            Moon at the solar system was the nuclear flux of powerdrain, teleported to a gravimetric hur'q. C-beams meet on starlight travel at deep space! I unite this flight, it's called crazy faith. Emitters meet with friendship at the biological solar sphere!
                             The core is a distant particle.
                         </p>
                     </div>
@@ -256,8 +272,91 @@
                 <a href="#" class="btn-text">Read all stories &rarr;</a>
             </div>
         </section>
+        <section class="section-book">
+            <div class="row">
+                <div class="book">
+                    <div class="book__form">
+                        <form action="#" class="form">
+                            <div class="u-margin-bottom-medium">
+                                <h2 class="heading-secondary">
+                                    Start booking now
+                                </h2>
+                            </div>
+                            <div class="form__group">
+                                <input type="text" placeholder="Full name" id="name" required class="form__input">
+                                <label for="name" class="form__label">Full name</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="email" placeholder="Email" id="email" required class="form__input">
+                                <label for="email" class="form__label">Email address</label>
+                            </div>
+                            <div class="form__group u-margin-bottom-medium">
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="small" name="size">
+                                    <label for="small" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Small tour group
+                                    </label>
+                                </div>
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="large" name="size">
+                                    <label for="large" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Large tour group
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <button class="btn btn--green">Next step &rarr;</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In, architecto et. Inventore dolores cumque harum neque perferendis, reiciendis nesciunt sequi dignissimos et quis! Sequi aspernatur cumque, ratione nihil nesciunt consequuntur.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; please read term before booking</h3>
+                <p class="popup__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, ab laborum porro sunt mollitia veniam! Ratione nihil incidunt modi eos voluptates at voluptatum, illum doloribus architecto laborum voluptas commodi obcaecati. Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Aspernatur perferendis in illo unde laborum quaerat laudantium ratione saepe consectetur quam dolor tenetur accusamus, amet omnis enim voluptas voluptatem aliquid dolores? Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Molestias dolor distinctio suscipit asperiores soluta harum inventore aspernatur, vitae aliquam est consectetur a praesentium dicta quas quos maiores explicabo accusantium nam.
+                </p>
+                <a href="#" class="btn btn--green">Book now</a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
